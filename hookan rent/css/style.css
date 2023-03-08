@@ -1,0 +1,248 @@
+:root {
+    --color1: --bs-white;
+    --color2: --bs-black;
+}
+
+body{
+    margin: 0;
+}
+main, .plan{
+    margin-top: 60px;
+}
+.about, .question-anser{
+    padding-top: 100px;
+    background-color: var(--bs-dark);
+}
+.prise-list{
+    padding-top: 50px;
+    background-color: lightgray;
+}
+.useful-info{
+    padding-top: 50px;
+}
+footer{
+    background-color: var(--bs-dark);
+}
+/* Меню */
+.jrs-img-logo{
+    width: 50px;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    padding: 0;
+}
+.jrs-menu{
+    display: flex;
+}
+.jrs-circle-menu{
+    margin: 7px 10px 0px 10px;
+    width: 35px;
+    height: 35px;
+    border: 3px solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Интро */
+.jrs-mask{
+    backdrop-filter: blur(4px);
+    background-color: rgba(0,0,0,0.4);
+  }
+.intro-header{
+    font-size: 65px;
+    padding-bottom: 20px;
+}
+.intro-text{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.jrs-btn{
+    border-radius: 50px;
+    border: 3px solid white;
+    color:white;
+    height: 50px;
+    width: 200px;
+    padding-top: 9px;
+    font-weight: 600;
+}
+.jrs-btn:hover{
+    background-color: white;
+    color:darkslategrey;
+}
+.jrs-btn2{
+    border-radius: 50px;
+    border: 3px solid darkslategrey;
+    color:white;
+    background-color: darkslategrey;
+    height: 50px;
+    width: 200px;
+    padding-top: 9px;
+    font-weight: 600;
+}
+.jrs-btn:hover{
+    background-color: darkslategrey;
+    color:white;
+}
+@media (max-width: 860px){
+    .intro-header{
+        font-size: 40px;
+    }
+    .intro-text{
+        font-size:14px;
+    }
+    .about h2{
+        font-size: 24px;
+    }
+    .about p{
+        font-size:14px;
+    }
+}
+
+/* About */
+
+.about h2{
+    color:white;
+    padding-bottom: 50px;
+}
+.about p{
+    color:white;
+    padding-bottom: 20px;
+}
+
+/*Как получать заказ*/
+.vr {
+    --mdb-divider-bg: black;
+    background-color: var(--mdb-divider-bg);
+}
+.jrs-circle{
+    margin: 0 auto;
+    width: 35px;
+    height: 35px;
+    border: 2px solid;
+    border-radius: 50%;
+    display: flex;
+    background-color: black;
+    color:white;
+    justify-content: center;
+    align-items: center;
+}
+.jrs-swap-row{
+    justify-content: end;
+}
+.hidden-on-pc{
+    display: none;
+}
+@media (max-width: 768px){
+    .jrs-swap{
+        display: none;
+    }
+    .hidden-on-pc{
+        display: block;
+    }
+}
+.img-plan{
+    width: 80px;
+}
+.plan p{
+    padding-bottom: 20px;
+}
+
+/* Почему мы */
+.img-whyus{
+    width: 100px;
+}
+
+/* Вопрос - Ответ*/
+
+.accordion-button{
+    background-color: var(--bs-dark);
+    color:white;
+}
+
+.accordion-button:not(.collapsed){
+    color: var(--bs-white);
+    background-color: var(--bs-dark);
+}
+.accordion-flush{
+    --mdb-accordion-flush-border-bottom:0px solid #f5f5f5;
+    --mdb-accordion-flush-btn-box-shadow: inset 0 -1px 0 var(--bs-danger);
+}
+.accordion-item{
+    background-color: var(--bs-dark);
+    color:white;
+}
+.accordion-button::after{
+    background-image: url(../photo/png-clipart-computer-icons-symbol-jay-z-miscellaneous-angle.png);
+    background-size: 1.6rem;
+    width: 25px;
+    height: 25px;
+    transition: transform .25s ease-in-out
+}
+.accordion-button::after:hover{
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: white;
+}
+
+.accordion-button:not(.collapsed)::after{
+    background-image:url(../photo/png-clipart-computer-icons-symbol-jay-z-miscellaneous-angle.png);
+    transform:rotate(-45deg)
+}
+
+.order-img{
+    width: 100%;
+}
+
+.jrs-circle-footer{
+    color:whitesmoke;
+    margin: 7px 5px 0px 5px;
+    width: 35px;
+    height: 35px;
+    border: 3px solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.f3{
+    justify-content: end;
+}
+@media (max-width: 1200px){
+    .f1{
+        justify-content: center;
+    }
+    .f3{
+        justify-content: center;
+    }
+}
+
+.jrs-acc{
+    background-color: var(--bs-white);
+    color:var(--bs-dark);
+}
+.jrs-acc:not(.collapsed){
+    color: var(--bs-dark);
+    background-color: var(--bs-white);
+}
+.my-test .accordion-button:not(.collapsed)::after{
+    background-image:url(../photo/black.png);
+    transform:rotate(-45deg)
+}
+.my-test .accordion-button::after{
+    background-image: url(../photo/black.png);
+    background-size: 1.6rem;
+    width: 25px;
+    height: 25px;
+    transition: transform .25s ease-in-out
+}
+.my-test .accordion-item{
+    background-color: var(--bs-white);
+    color:var(--bs-dark);
+}
+.my-test .accordion-flush{
+    --mdb-accordion-flush-border-bottom:0px solid #f5f5f5;
+    --mdb-accordion-flush-btn-box-shadow: inset 0 -1px 0 var(--bs-success);
+}
